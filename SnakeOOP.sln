@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30517.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnakeOOP", "SnakeOOP\SnakeOOP.csproj", "{8DB562E6-B07E-4E2A-B2AA-A32D2F35647D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DB562E6-B07E-4E2A-B2AA-A32D2F35647D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB562E6-B07E-4E2A-B2AA-A32D2F35647D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB562E6-B07E-4E2A-B2AA-A32D2F35647D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB562E6-B07E-4E2A-B2AA-A32D2F35647D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13BD91DC-D1DF-45C2-A7FD-66CCF8407EE0}
+	EndGlobalSection
+EndGlobal
