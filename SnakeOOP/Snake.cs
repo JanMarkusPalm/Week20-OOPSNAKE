@@ -21,6 +21,7 @@ namespace SnakeOOP
         }
         public void Move()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Point tail = pointList.First();
             pointList.Remove(tail);
             tail.Clear();
@@ -64,13 +65,35 @@ namespace SnakeOOP
             {
                 food.symb = head.symb;
                 pointList.Add(food);
+
+                Console.Beep();
                 return true;
             }
+            
             else
             {
                 return false;
             }
         }
+
+        public bool Eat2(Point food2)
+        {
+            Point head = GetNextPoint();
+            if (head.IsHit(food2))
+            {
+                food2.symb = head.symb;
+                
+                Console.Beep();
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
+        }
+
+
         public bool IsHitTail()
         {
             Point head = pointList.Last();

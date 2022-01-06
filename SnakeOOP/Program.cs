@@ -20,6 +20,9 @@ namespace SnakeOOP
             FoodGenerator foodGenerator = new FoodGenerator(80, 25, '%');
             Point food = foodGenerator.GenerateFood();
             food.Draw();
+            FoodGenerator foodGenerator2 = new FoodGenerator(70, 20, '¤');
+            Point food2 = foodGenerator2.GenerateFood2();
+            food2.Draw();
 
             while (true)
             {
@@ -30,8 +33,17 @@ namespace SnakeOOP
                 if (snake.Eat(food))
                 {
                     food = foodGenerator.GenerateFood();
+                    Console.ForegroundColor = ConsoleColor.Blue;
                     food.Draw();
+                    
                     score++;
+                }
+                if (snake.Eat(food2))
+                {
+                    food2 = foodGenerator2.GenerateFood2();
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                    food2.Draw();
+                    score--;
                 }
                 else
                 {
@@ -51,6 +63,9 @@ namespace SnakeOOP
 
         public static void WriteGameOver(string score)
         {
+
+            Console.Beep();
+
             int xOffset = 25;
             int yOffset = 8;
             Console.ForegroundColor = ConsoleColor.Blue;

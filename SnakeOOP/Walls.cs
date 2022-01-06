@@ -20,8 +20,8 @@ namespace SnakeOOP
             VerticalLine right = new VerticalLine(0, 25, 80, '#');
 
             VerticalLine obstacle = new VerticalLine(10, 20, 55, '!');
-
-            HorizontalLine obstacle2 = new HorizontalLine(5, 10, 20, '!');
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            HorizontalLine obstacle2 = new HorizontalLine(5, 24, 20, '!');
 
             wallList.Add(top);
             wallList.Add(left);
